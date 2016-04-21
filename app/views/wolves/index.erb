@@ -1,0 +1,9 @@
+<h1>Wolves Index</h1>
+<ul>
+  <% @wolf.each do |w| %>
+
+    <li><a href="/wolves/<%= @wolf.name %>"><%= @wolf.name %></a></li>
+  <% end %>
+</ul>
+<p><a href="/wolves/new">New Wolf</a></p>
+<p><a href="/">Back Home</a></p>
