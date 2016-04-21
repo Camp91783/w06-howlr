@@ -11,3 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+ActiveRecord::Schema.define(version: 2) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "howls", force: :cascade do |t|
+    t.integer  "wolf_id"
+    t.text     "text"
+    t.string   "img_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "wolves", force: :cascade do |t|
+    t.string "name"
+    t.text   "description"
+    t.string "link"
+  end
+
+end
