@@ -1,0 +1,9 @@
+<h1>Howls Index</h1>
+<ul>
+  <% @howls.each do |l| %>
+
+    <li><a href="/howls/<%= @howls.ids %>"><%= @howls.name %></a></li>
+  <% end %>
+</ul>
+<p><a href="/howls/new">New Howl</a></p>
+<p><a href="/">Back Home</a></p>
