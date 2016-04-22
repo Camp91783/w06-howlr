@@ -17,17 +17,23 @@
     
 
   
-  <form action="/wolves" method="post">
+  <form action="/wolves" method="options">
   <div> 
     Who's Howling?
-    <input type="text" name="wolf_id" >
+      <select name="wolf_id"> 
+      <% @wolves.each do |w| %>
+        <option value="<%= w.id %>"><%= w.name %></option>
+      <% end %>
+
+          
+      </select>
   </div>
   <div>
     
   <input type= "submit" value="Make a new Howl">
 
     
-<p><a href="/howls">Back to Wolves</a></p>
+<p><a href="/howls">Back to Howls</a></p>
 
 
 

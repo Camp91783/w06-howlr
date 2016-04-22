@@ -25,9 +25,10 @@ ActiveRecord::Schema.define(version: 3) do
   end
 
   create_table "wolves", force: :cascade do |t|
-    t.string "name"
-    t.text   "description"
-    t.string "link"
+    t.string  "name"
+    t.text    "description"
+    t.string  "link"
+    t.integer "wolf_id"
   end
 
   add_foreign_key "howls", "wolves"

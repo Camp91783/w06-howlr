@@ -27,7 +27,8 @@ end
 
 #show
 get "/wolves/:id/?" do
-  @wolf = Wolf.find_by_id(params['name'])
+  @wolf = Wolf.find_by_id(params['id'])
+
   erb :"wolves/show"
 end
 

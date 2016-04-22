@@ -2,7 +2,7 @@
 <ul>
   <% @wolf.each do |w| %>
 
-    <li><a href="/wolves/<%= @wolf.name %>"><%= @wolf.name %></a></li>
+    <li><a href="/wolves/<%= w.id %>"><%= w.name %></a></li>
   <% end %>
 </ul>
 <p><a href="/wolves/new">New Wolf</a></p>

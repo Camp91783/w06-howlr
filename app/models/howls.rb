@@ -1,8 +1,9 @@
-class Howls < ActiveRecord::Base
+class Howl < ActiveRecord::Base
 
 	validates :text, presence: true
 	validates :wolf_id, presence: true
 	validates :img_url, presence: true
-	validates :text, presence: true
+
+	belongs_to :wolf
 
 end

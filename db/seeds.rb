@@ -15,6 +15,8 @@ Wolf.create!(name: "Dave",
 Wolf.create!(name: "Teen wolf",
 							description: "Teeenage wolf who like to play basketball sometimes",
 							link:  "http://ia.media-imdb.com/images/M/MV5BMTUzMTk2MjM2Ml5BMl5BanBnXkFtZTcwMjgzMTM3NA@@._V1_SX640_SY720_.jpg")
-Howls.create!(text: "loud and deep howl",
-							wolf_id: 1,
+
+
+Howl.create!(text: "loud and deep howl",
+							wolf: Wolf.first,
 							img_url: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Howlsnow.jpg")
