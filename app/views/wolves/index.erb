@@ -1,9 +1,9 @@
-<h1>Wolves Index</h1>
+<h1>Your Wolf Pack</h1>
 <ul>
   <% @wolf.each do |w| %>
 
     <li><a href="/wolves/<%= w.id %>"><%= w.name %></a></li>
   <% end %>
 </ul>
-<p><a href="/wolves/new">New Wolf</a></p>
+<p><a href="/wolves/new">Join the Pack</a></p>
 <p><a href="/">Back Home</a></p>
