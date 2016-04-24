@@ -1,14 +1,11 @@
 <h1> Your Howl</h1>
 
-<p><%= @howl.text %></p>
-<p><%= @howl.wolf.name %></p>
-<img src= " <%= @howl.img_url %>">
-
-
+<p><%= @howls.name %></p>
 
 
 
 <p><a href="/howls">Back to all Howls</a></p>
+<p><a href="/howls/<%= @howls.id %>/edit">Edit</a></p>
 
 
 
